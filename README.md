@@ -17,6 +17,10 @@ $ git clone https://github.com/zademanish/QED42-ASSIGNMENT.git
 ```bash
  $ npm install 
 ```
+## Run Application
+```bash
+$ npm run dev
+```
     
 ## FakeStoreApi
 
