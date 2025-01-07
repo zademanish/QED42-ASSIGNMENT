@@ -42,6 +42,6 @@ $ npm run dev
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
+| `id`      | `Number` | **Required**. Id of item to fetch |
 
 
