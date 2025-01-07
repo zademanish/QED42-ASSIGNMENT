@@ -1,8 +1,43 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# QED42 Assignment 
 
-Currently, two official plugins are available:
+This is a small assignment project where the ProductList component fetches data from the FakeStore API and displays all the products on the page. When a user clicks on the "Add to Cart" button, the product is added to the cart. In the Cart component, users can adjust the quantity of products or remove them from the cart.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Installation
+
+Install QED42 Assignment with npm
+
+
+## Clone Repo
+```bash
+$ git clone https://github.com/zademanish/QED42-ASSIGNMENT.git
+```
+## Install NPM
+```bash
+ $ npm install 
+```
+    
+## FakeStoreApi
+
+#### Get all items
+
+```http
+  https://fakestoreapi.in/api/products
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
+
+#### Get item
+
+```http
+  https://fakestoreapi.in/api/products/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
+
+

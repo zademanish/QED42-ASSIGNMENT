@@ -1,6 +1,7 @@
 
 import React from "react";
 import { useCart } from "../Context/CardContext"
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { cartItems, updateQuantity, removeFromCart, calculateTotal } = useCart();
@@ -8,9 +9,8 @@ const Cart = () => {
   return (
     <div className="max-w-7xl mx-auto">
       <h2 className="text-4xl font-mono  mt-8 mb-4 px-4"> 🛒Cart</h2>
-
       {cartItems.length === 0 ? (
-        <p className="px-4">Your cart is empty.</p>
+        <p className="px-4 font-semibold">Your cart is empty.</p>
       ) : (
         <div className="grid gap-4 px-4">
           {cartItems.map((item) => (
@@ -18,6 +18,7 @@ const Cart = () => {
               <img src={item.image} alt={item.title} className="h-24 w-24 object-contain" />
               <div className="flex-1">
                 <h3 className="text-lg font-bold">{item.title}</h3>
+                <p className="text-gray-600 font-bold">Color : {item.color}</p>
                 <p className="text-green-900 font-bold">₹ {item.price}</p>
               </div>
               <div className="flex items-center gap-2">

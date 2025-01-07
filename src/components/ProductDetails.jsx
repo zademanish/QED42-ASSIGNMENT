@@ -7,7 +7,6 @@ const ProductDetails = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const { addToCart } = useCart();
-
   useEffect(() => {
     axios.get(`https://fakestoreapi.in/api/products/${id}`).then((response) => {
       setProduct(response.data.product);

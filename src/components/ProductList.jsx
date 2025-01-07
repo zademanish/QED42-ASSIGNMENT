@@ -75,8 +75,10 @@ const ProductList = () => {
                 />
               </Link>
 
-              <h3 className="text-lg font-bold mt-2 ">{product.title}</h3>
-              <p className=" text-green-900 font-bold text-xl">
+              <h3 className="text-lg font-bold my-2 ">{product.brand.length >30? product.brand.slice(0,30)+'...':product.brand}</h3>
+              <p className="text-lg font-bold my-2 h-10 md:px-4">{product.title.length >60? product.title.slice(0,60)+'...':product.title}</p>
+
+              <p className=" text-green-900 font-bold mt-3 text-xl">
                 ₹ {product.price}
               </p>
 
@@ -89,7 +91,7 @@ const ProductList = () => {
                 </Link>
                 <Link
                   to={`/product/${product.id}`}
-                  className="text-md bg-orange-400 font-semibold flex items-center px-2 rounded-md"
+                  className="text-md bg-orange-400 font-semibold  px-3 py-2 rounded-md"
                 >
                   View Product
                 </Link>
