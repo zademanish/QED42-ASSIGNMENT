@@ -76,11 +76,11 @@ const ProductList = () => {
               </Link>
 
               <h3 className="text-lg font-bold my-2 ">{product.brand.length >30? product.brand.slice(0,30)+'...':product.brand}</h3>
-              <p className="text-lg font-bold my-2 h-10 md:px-4">{product.title.length >60? product.title.slice(0,60)+'...':product.title}</p>
+              <p className="text-lg font-bold md:px-4">{product.title.length >30? product.title.slice(0,30)+'...':product.title}</p>
 
-              <p className=" text-green-900 font-bold mt-3 text-xl">
+              <h2 className=" text-green-900 font-bold mt-3 text-xl">
                 ₹ {product.price}
-              </p>
+              </h2>
 
               <div className="flex justify-between gap-10  mt-8">
                 <Link
